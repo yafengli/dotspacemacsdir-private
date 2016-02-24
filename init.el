@@ -23,20 +23,20 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     auto-completion
      better-defaults
      emacs-lisp
      scala
-     java
-     rust
      clojure
-     c-c++
+     (c-c++ :variables
+            c-c++-default-mode-for-headers 'c++-mode)
      gtags
      (haskell :variables haskell-enable-ghc-mod-support t)
+     (auto-completion :variables auto-completion-enable-sort-by-usage t)
      git
      asciidoc
      markdown
      org
+     html
      ;; My layer
      yafengli
      ;; (shell :variables
@@ -211,14 +211,9 @@ user code."
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+
   (setq eclim-eclipse-dirs "d:/eclipse"
-        eclim-executable "d:/eclipse/eclim.bat")
-  ;; (evil-leader/set-key "w a" 'emacs-maximize)
-  ;; (evil-leader/set-key "w i" 'emacs-minimize)
-  ;;neotree
-  ;; (evil-leader/set-key "t t" 'neotree-show)
-  ;; try to improve slow performance on windows.
-  ;; (setq w32-get-true-file-attributes nil)
+        eclim-executable "d:/eclipse/eclim.bat")  
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
