@@ -35,8 +35,7 @@ values."
      git
      asciidoc
      markdown
-     org
-     html
+     org     
      ;; My layer
      yafengli
      ;; git
