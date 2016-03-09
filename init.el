@@ -25,6 +25,7 @@ values."
      ;; ----------------------------------------------------------------
      better-defaults
      emacs-lisp
+     java
      scala
      clojure
      (c-c++ :variables
@@ -102,7 +103,8 @@ values."
    ;; size to make separators look not too crappy.
    ;; dotspacemacs-default-font '("Source Code Pro"
    dotspacemacs-default-font '(;; "Source Code Pro"
-                                "DejaVu Sans Mono"
+                               ;; "DejaVu Sans Mono"
+                               "Source Code Pro"
                                :size 12
                                :weight normal
                                :width normal
