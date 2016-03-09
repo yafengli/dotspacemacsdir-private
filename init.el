@@ -207,7 +207,10 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."  
-  )
+;;   (setq url-proxy-services
+;;	'(("http" . "127.0.0.1:8989")
+;;	  ("https" . "127.0.0.1:8989")))
+)
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
