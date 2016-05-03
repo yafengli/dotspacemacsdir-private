@@ -24,18 +24,19 @@ values."
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
      (auto-completion :variables auto-completion-enable-sort-by-usage t)
-     better-defaults     
+     better-defaults
      emacs-lisp
      scala
      clojure
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
      gtags
-     (haskell :variables haskell-enable-ghc-mod-support t)    
+     (haskell :variables haskell-enable-ghc-mod-support t)
      git
      asciidoc
      markdown
-     org     
+     org
+     php
      ;; My layer
      yafengli
      ;; git
@@ -118,8 +119,10 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+   dotspacemacs-default-font '(;;"Source Code Pro"
+                               ;;"Lucida Console"
+                               "DejaVu Sans Mono"
+                               :size 12
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
