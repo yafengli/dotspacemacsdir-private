@@ -32,6 +32,7 @@ values."
             c-c++-default-mode-for-headers 'c++-mode)
      gtags
      (haskell :variables haskell-enable-ghc-mod-support t)
+     ;;(haskell :variables haskell-enable-ghci-ng-support t)
      git
      asciidoc
      markdown

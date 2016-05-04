@@ -3,7 +3,7 @@
 ;; 显示行数
 (global-linum-mode t)
 ;; 符号成对
-(electric-pair-mode t)
+;;(electric-pair-mode t)
 ;; 全屏
 (run-with-idle-timer 0.1 nil 'emacs-maximize)
 ;;启动单进程Server
