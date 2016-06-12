@@ -37,7 +37,6 @@ values."
      asciidoc
      markdown
      org
-     php
      ;; My layer
      yafengli
      ;; git
