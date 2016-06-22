@@ -29,7 +29,7 @@
 
 ;;; Code:
 (defconst yafengli-packages
-  '(flycheck)
+  '(web-mode)
   "The list of Lisp packages required by the yafengli layer.
 
 Each entry is either:
@@ -57,7 +57,10 @@ Each entry is either:
       - A list beginning with the symbol `recipe' is a melpa
         recipe.  See: https://github.com/milkypostman/melpa#recipe-format")
 
-;; (defun yafengli/init-flycheck()
-;;  (use-package flycheck))
+(defun yafengli/init-web-mode()
+  (use-package web-mode)
+  ;; Mustache支持
+  (add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+  (add-to-list 'auto-mode-alist '("\\.ftl\\'" . web-mode)))
 ;;; packages.el ends here
 
