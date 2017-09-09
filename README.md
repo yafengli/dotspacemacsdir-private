@@ -1,3 +1,3 @@
 ## Install
 
-    git clone git@github.com:yafengli/dotspacemacsdir-private.git ~/.spacemacs.d
+    git clone https://github.com/yafengli/dotspacemacsdir-private.git ~/.spacemacs.d
