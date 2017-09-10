@@ -28,6 +28,7 @@ values."
      emacs-lisp
      scala
      clojure
+     go
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
      ;; gtags
@@ -37,7 +38,6 @@ values."
      git
      asciidoc
      markdown
-     json
      org
      ;; My layer
      yafengli
