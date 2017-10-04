@@ -124,7 +124,7 @@ values."
    dotspacemacs-default-font '(;;"Source Code Pro"
                                ;;"Lucida Console"
                                "DejaVu Sans Mono"
-                               :size 12
+                               :size 14
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -257,6 +257,8 @@ It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
 	;;(setq url-proxy-services '(("http" . "127.0.0.1:8989")))
+  (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
+  (push '("ensime" . "melpa-stable") package-pinned-packages)
   )
 
 (defun dotspacemacs/user-config ()
