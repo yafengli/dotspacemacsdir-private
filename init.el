@@ -29,6 +29,10 @@ values."
      scala
      clojure
      go
+     (go :variables
+         go-use-gometalinter t
+         go-tab-width 2
+         gofmt-command "goimports")
      (c-c++ :variables
             c-c++-default-mode-for-headers 'c++-mode)
      ;; gtags
