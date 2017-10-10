@@ -27,7 +27,6 @@ values."
      better-defaults
      emacs-lisp
      scala
-     ensime
      clojure
      go
      (c-c++ :variables
@@ -125,7 +124,7 @@ values."
    dotspacemacs-default-font '(;;"Source Code Pro"
                                ;;"Lucida Console"
                                "DejaVu Sans Mono"
-                               :size 14
+                               :size 12
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -257,7 +256,13 @@ values."
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
-	;;(setq url-proxy-services '(("http" . "127.0.0.1:8989")))
+  ;;设置代理
+  ;;(setq url-proxy-services '(("http" . "127.0.0.1:8989"))) 
+  ;;设置清华源
+  (setq configuration-layer--elpa-archives
+        '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+          ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+          ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
   (push '("ensime" . "melpa-stable") package-pinned-packages)
   )
@@ -277,7 +282,7 @@ layers configuration. You are free to put any user code."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (web-mode rainbow-delimiters org-download move-text magit-gitflow link-hint info+ helm-swoop helm-projectile evil-surround evil-escape ensime dumb-jump define-word ace-link inflections cider multiple-cursors iedit smartparens evil goto-chg yasnippet company helm helm-core markdown-mode projectile org-plus-contrib magit magit-popup git-commit with-editor async hydra s dash ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree toc-org spaceline smeargle scala-mode sbt-mode restart-emacs queue popwin pkg-info persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-bullets open-junk-file noflet neotree mwim mmm-mode markdown-toc macrostep lorem-ipsum linum-relative indent-guide hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio go-guru go-eldoc gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-ediff evil-args evil-anzu elisp-slime-nav disaster company-statistics company-go company-c-headers column-enforce-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent adoc-mode adaptive-wrap ace-window ace-jump-helm-line ac-ispell))))
+    (list-themes-here-theme clojure-mode powerline web-mode rainbow-delimiters org-download move-text magit-gitflow link-hint info+ helm-swoop helm-projectile evil-surround evil-escape ensime dumb-jump define-word ace-link inflections cider multiple-cursors iedit smartparens evil goto-chg yasnippet company helm helm-core markdown-mode projectile org-plus-contrib magit magit-popup git-commit with-editor async hydra s dash ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree toc-org spaceline smeargle scala-mode sbt-mode restart-emacs queue popwin pkg-info persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-bullets open-junk-file noflet neotree mwim mmm-mode markdown-toc macrostep lorem-ipsum linum-relative indent-guide hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio go-guru go-eldoc gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-ediff evil-args evil-anzu elisp-slime-nav disaster company-statistics company-go company-c-headers column-enforce-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent adoc-mode adaptive-wrap ace-window ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
