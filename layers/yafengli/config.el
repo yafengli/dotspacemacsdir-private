@@ -6,5 +6,6 @@
 ;;(electric-pair-mode t)
 ;; 全屏
 (run-with-idle-timer 0.1 nil 'emacs-maximize)
+(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 ;;启动单进程Server
 (server-start)
