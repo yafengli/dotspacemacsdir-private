@@ -10,7 +10,8 @@
 ;; 显示行数
 (setq-default dotspacemacs-line-numbers t)
 ;; 全屏
-(run-with-idle-timer 1 nil 'emacs-maximize)
+;;(run-with-idle-timer 1 nil 'emacs-maximize)
 (add-to-list 'default-frame-alist '(fullscreen . fullboth))
+;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 ;;启动单进程Server
 (server-start)

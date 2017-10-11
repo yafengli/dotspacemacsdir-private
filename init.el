@@ -27,6 +27,11 @@ values."
      better-defaults
      emacs-lisp
      scala
+     (scala :variables
+            ;;scala-auto-start-ensime t
+            ensime-startup-snapshot-notification nil
+            ensime-startup-notification nil
+            )
      clojure
      go
      (go :variables
