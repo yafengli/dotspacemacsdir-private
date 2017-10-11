@@ -259,16 +259,7 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
-in `dotspacemacs/user-config'."
-  ;;设置代理
-  ;;(setq url-proxy-services '(("http" . "127.0.0.1:8989"))) 
-  ;;设置清华源
-  (setq configuration-layer--elpa-archives
-        '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-          ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-          ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
-  (push '("melpa-stable" . "stable.melpa.org/packages/") configuration-layer--elpa-archives)
-  (push '("ensime" . "melpa-stable") package-pinned-packages)
+in `dotspacemacs/user-config'."  
   )
 
 (defun dotspacemacs/user-config ()
