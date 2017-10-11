@@ -127,8 +127,8 @@ values."
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '(;;"Source Code Pro"
                                ;;"Lucida Console"
-                               ;;"DejaVu Sans Mono"
-                               "ProFontWindows"
+                               "DejaVu Sans Mono"
+                               ;; "ProFontWindows"
                                :size 12
                                :weight normal
                                :width normal
@@ -260,7 +260,7 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put almost
 any user code here.  The exception is org related code, which should be placed
-in `dotspacemacs/user-config'."  	
+in `dotspacemacs/user-config'."
   )
 
 (defun dotspacemacs/user-config ()
