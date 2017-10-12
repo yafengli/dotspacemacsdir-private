@@ -5,5 +5,3 @@
 (evil-leader/set-key "t t" 'neotree-show)
 ;; format
 (evil-leader/set-key "m f" 'indent-whole)
-;; M-x
-(evil-leader/set-key "." 'helm-M-x)
