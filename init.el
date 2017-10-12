@@ -26,29 +26,27 @@ values."
      (auto-completion :variables auto-completion-enable-sort-by-usage t)
      better-defaults
      emacs-lisp
-     scala
-     (scala :variables
+     ;;scala
+     ;; (scala :variables
             ;;scala-auto-start-ensime t
-            ensime-startup-snapshot-notification nil
-            ensime-startup-notification nil
-            )
-     clojure
-     go
-     (go :variables
-         go-use-gometalinter t
-         go-tab-width 2
-         gofmt-command "goimports")
-     (c-c++ :variables
-            c-c++-default-mode-for-headers 'c++-mode)
+     ;;       ensime-startup-snapshot-notification nil
+     ;;       ensime-startup-notification nil
+     ;;       )
+     ;;clojure
+     ;;go
+     ;;(go :variables
+     ;;    go-use-gometalinter t
+     ;;    go-tab-width 2
+     ;;    gofmt-command "goimports")
+     ;; c-c++
+     ;;(c-c++ :variables
+     ;;       c-c++-default-mode-for-headers 'c++-mode)
      ;; gtags
      ;; (haskell :variables haskell-enable-ghc-mod-support t)
      ;; (haskell :variables haskell-enable-ghci-ng-support t)
      ;; javascript
-     git
-     asciidoc
-     markdown
-     org
      ;; My layer
+
      yafengli
      ;; git
      ;; markdown
@@ -283,7 +281,7 @@ layers configuration. You are free to put any user code."
  ;; If there is more than one, they won't work right.
  '(package-selected-packages
    (quote
-    (list-themes-here-theme clojure-mode powerline web-mode rainbow-delimiters org-download move-text magit-gitflow link-hint info+ helm-swoop helm-projectile evil-surround evil-escape ensime dumb-jump define-word ace-link inflections cider multiple-cursors iedit smartparens evil goto-chg yasnippet company helm helm-core markdown-mode projectile org-plus-contrib magit magit-popup git-commit with-editor async hydra s dash ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree toc-org spaceline smeargle scala-mode sbt-mode restart-emacs queue popwin pkg-info persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-bullets open-junk-file noflet neotree mwim mmm-mode markdown-toc macrostep lorem-ipsum linum-relative indent-guide hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio go-guru go-eldoc gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-ediff evil-args evil-anzu elisp-slime-nav disaster company-statistics company-go company-c-headers column-enforce-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent adoc-mode adaptive-wrap ace-window ace-jump-helm-line ac-ispell))))
+    (web-beautify livid-mode skewer-mode simple-httpd json-mode json-snatcher json-reformat js2-refactor js2-mode js-doc intero flycheck hlint-refactor hindent helm-hoogle helm-gtags haskell-snippets ggtags company-tern dash-functional tern company-ghci company-ghc ghc haskell-mode company-cabal coffee-mode cmm-mode gitignore-mode edn paredit peg markup-faces go-mode tagedit slim-mode scss-mode sass-mode pug-mode less-css-mode helm-css-scss haml-mode emmet-mode company-web web-completion-data list-themes-here-theme clojure-mode powerline web-mode rainbow-delimiters org-download move-text magit-gitflow link-hint info+ helm-swoop helm-projectile evil-surround evil-escape ensime dumb-jump define-word ace-link inflections cider multiple-cursors iedit smartparens evil goto-chg yasnippet company helm helm-core markdown-mode projectile org-plus-contrib magit magit-popup git-commit with-editor async hydra s dash ws-butler winum which-key volatile-highlights vi-tilde-fringe uuidgen use-package unfill undo-tree toc-org spaceline smeargle scala-mode sbt-mode restart-emacs queue popwin pkg-info persp-mode pcre2el paradox orgit org-projectile org-present org-pomodoro org-bullets open-junk-file noflet neotree mwim mmm-mode markdown-toc macrostep lorem-ipsum linum-relative indent-guide hungry-delete htmlize hl-todo highlight-parentheses highlight-numbers highlight-indentation hide-comnt help-fns+ helm-themes helm-mode-manager helm-make helm-gitignore helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio go-guru go-eldoc gnuplot gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link gh-md fuzzy flx-ido fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit evil-lisp-state evil-indent-plus evil-iedit-state evil-exchange evil-ediff evil-args evil-anzu elisp-slime-nav disaster company-statistics company-go company-c-headers column-enforce-mode cmake-mode clojure-snippets clj-refactor clean-aindent-mode clang-format cider-eval-sexp-fu auto-yasnippet auto-highlight-symbol auto-compile aggressive-indent adoc-mode adaptive-wrap ace-window ace-jump-helm-line ac-ispell))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
