@@ -8,7 +8,7 @@
     	ensime-startup-notification nil)
 	(go :variables
   		go-use-gometalinter t
-   		;;go-tab-width 2
+   		go-tab-width 2
  		gofmt-command "goimports")
 	(c-c++ :variables
     	c-c++-default-mode-for-headers 'c++-mode)
