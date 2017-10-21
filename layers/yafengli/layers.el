@@ -1,6 +1,6 @@
 ;;依赖的layers
 (configuration-layer/declare-layers '(
-	html javascript git clojure asciidoc scala go c-c++ org haskell    
+	html javascript git clojure asciidoc scala go c-c++ org haskell markdown
   ;;gtags
 	(scala :variables
     	;;scala-auto-start-ensime t
