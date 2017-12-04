@@ -267,9 +267,9 @@ any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
   ;;增加清华源
   (setq configuration-layer--elpa-archives
-    '(("melpa-cn" . "https://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
-      ("org-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
-      ("gnu-cn"   . "https://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
+    '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
+      ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
+      ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   ;;增加国内源
   ;;(setq configuration-layer--elpa-archives
   ;;   '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
