@@ -267,17 +267,17 @@ any user code here.  The exception is org related code, which should be placed
 in `dotspacemacs/user-config'."
   
   ;;设置代理
-  (setq url-proxy-services '(("http" . "127.0.0.1:8989"))) 
+  ;;(setq url-proxy-services '(("http" . "127.0.0.1:8989"))) 
   ;;增加清华源
   ;;(setq configuration-layer--elpa-archives
   ;;  '(("melpa-cn" . "http://mirrors.tuna.tsinghua.edu.cn/elpa/melpa/")
   ;;    ("org-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/org/")
   ;;    ("gnu-cn"   . "http://mirrors.tuna.tsinghua.edu.cn/elpa/gnu/")))
   ;;增加国内源
-  ;;(setq configuration-layer--elpa-archives
-  ;;   '(("melpa-cn" . "https://elpa.emacs-china.org/melpa/")
-  ;;    ("org-cn"   . "https://elpa.emacs-china.org/org/")
-  ;;    ("gnu-cn"   . "https://elpa.emacs-china.org/gnu/")))	
+  (setq configuration-layer--elpa-archives
+     '(("melpa-cn" . "http://elpa.emacs-china.org/melpa/")
+      ("org-cn"   . "http://elpa.emacs-china.org/org/")
+      ("gnu-cn"   . "http://elpa.emacs-china.org/gnu/")))	
   )
 
 (defun dotspacemacs/user-config ()
