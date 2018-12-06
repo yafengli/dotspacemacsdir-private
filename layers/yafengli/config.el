@@ -11,7 +11,7 @@
 ;;显示时间的格式
 (setq display-time-format "%m月%d日%A%H:%M")
 ;; 全屏
-;;(run-with-idle-timer 1 nil 'emacs-maximize)
+(run-with-idle-timer 1 nil 'emacs-maximize)
 ;;(add-to-list 'default-frame-alist '(fullscreen . fullboth))
 ;;(add-to-list 'default-frame-alist '(fullscreen . maximized))
 ;;启动单进程Server
