@@ -131,8 +131,9 @@ values."
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '(;; "Source Code Pro"
                                ;; "Lucida Console"
-                               "DejaVu Sans Mono"
+                               ;; "DejaVu Sans Mono"
                                ;; "ProFontWindows"
+                               "微软雅黑"
                                :size 14
                                :weight normal
                                :width normal
